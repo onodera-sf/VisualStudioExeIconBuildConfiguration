@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationIcon Condition=" '$(Configuration)' == 'Debug' ">1.ico</ApplicationIcon>
+		<ApplicationIcon Condition=" '$(Configuration)' == 'Release' ">2.ico</ApplicationIcon>
+		<Description>選択しているビルド構成によって実行ファイルのアイコンを変更するサンプルです。</Description>
+		<Company>ソーサリーフォース (https://sorceryforce.net/)</Company>
+		<Authors>おのでら (ソーサリーフォース)</Authors>
+		<Copyright>Copyright (C) 2022 おのでら</Copyright>
+	</PropertyGroup>
+
+  <ItemGroup>
+		<Content Include="2.ico" />
+	</ItemGroup>
+
+</Project>
